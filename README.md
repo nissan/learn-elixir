@@ -12,14 +12,15 @@ In Windows Powershell, `iex` is already linked, so run
 New-Alias ielx iex.bat
 ```
 
-To use `ielx` instead to run interactive Elixir shell
+To use `ielx` instead to run interactive Elixir shell. I also put this line in my profile so the mapping happens automatically every time I start PowerShel. 
+Use [this documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6) to setup a profile for PowerShell and insert the code
+
+Since I'm self-editing, I may interchange `iex` and my alias `ielx` when writing ,y notes. They're both meaning the same reference to `iex.bat`
 
 ### Enabling `iex` shell history on Windows
-
-use [this documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6) to setup a profile for PowerShell and insert the code
-
+Add this line to your profile
 ```PowerShell
-set ERL_AFLAGS "-kernel shell_history enabled"
+$env:ERL_AFLAGS="-kernel shell_history enabled"
 ```
 
 to enable history of expressions that have been run inside `iex` shell [Referenced here for original answer including other OS config](https://stackoverflow.com/questions/45405070/how-do-i-save-iex-history)
