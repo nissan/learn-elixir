@@ -22,6 +22,6 @@ to enable history of expressions that have been run inside `iex` shell [Referenc
 
 ### VSCode plugins ###
 Two exist that seem popular 
-1. ```VSCode-Elixir```
-2. ```ElixirLS```
-Haven't seen a major difference between them, although ```ElixirLS``` acknowledges using VSCode-Elixir code in its implementation. 
+1. [`VSCode-Elixir`](https://marketplace.visualstudio.com/items?itemName=mjmcloug.vscode-elixir)
+2. [`ElixirLS`](https://github.com/JakeBecker/vscode-elixir-ls)
+Haven't seen a major difference between them, although `ElixirLS` acknowledges using VSCode-Elixir code in its implementation. 
