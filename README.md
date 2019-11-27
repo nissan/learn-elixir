@@ -1,6 +1,8 @@
 # Learn Elixir - Nissan Dookeran
 
-My Learning Elixir repo notes. Disclaimer: I write this as a fellow student, not a teacher. Amendments, enhancements etc all welcome. Notes are not meant to replace the fine tutorials and documentation out there, just to share the one or two tips that make the experience better for the learner. I think of it like [the notations Harry Potter found in his Advanced Potion-Making book in the Half-Blood Prince novel](https://harrypotter.fandom.com/wiki/Severus_Snape%27s_copy_of_Advanced_Potion-Making).
+My Learning Elixir repo notes.
+
+> Disclaimer: I write this as a fellow student, not a teacher. Amendments, enhancements etc all welcome. Notes are not meant to replace the fine tutorials and documentation or forum contributions I reference consistently to build these notes that are already out there, just to share the one or two tips from my own learning path that I think can make the experience better for other learners. I think of it like [the notations Harry Potter found in his Advanced Potion-Making book in the Half-Blood Prince novel](https://harrypotter.fandom.com/wiki/Severus_Snape%27s_copy_of_Advanced_Potion-Making).
 
 ## Learning notes
 
@@ -12,13 +14,15 @@ In Windows Powershell, `iex` is already linked, so run
 New-Alias ielx iex.bat
 ```
 
-To use `ielx` instead to run interactive Elixir shell. I also put this line in my profile so the mapping happens automatically every time I start PowerShel. 
+To use `ielx` instead to run interactive Elixir shell. I also put this line in my profile so the mapping happens automatically every time I start PowerShel.
 Use [this documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6) to setup a profile for PowerShell and insert the code
 
 Since I'm self-editing, I may interchange `iex` and my alias `ielx` when writing ,y notes. They're both meaning the same reference to `iex.bat`
 
 ### Enabling `iex` shell history on Windows
+
 Add this line to your profile
+
 ```PowerShell
 $env:ERL_AFLAGS="-kernel shell_history enabled"
 ```
