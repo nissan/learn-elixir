@@ -63,3 +63,15 @@ Another [Nice little quote](https://github.com/elixir-lang/elixir/issues/2682) p
 > Another way to do it is to provide iexw.bat which is basically just a call to iex.bat --werl.
 
 [Further reading on `iex`](https://hexdocs.pm/iex/IEx.html)
+
+### The `atom` data type
+[Article](https://zxq9.com/archives/1456) on the logic behind the `atom` data type, and why it makes sense in Erlang world> Little snippets below that kinda summarise my takeaways from this:
+>The common definition you’ll hear most frequently is something like:
+>>An atom is a label. Its only meaning is itself.
+
+>...you might be puzzled at why we have all these little strings that aren’t really strings.
+
+
+>..atoms being a much nicer and dramatically more flexible version of global enumerated types that let us write code in a more natural style that uses normal-language labels for program semantics
+
+>Underneath the hood Erlang maintains a running table of atom label values and translates them to integer values on the way into the system and on the way out of the system. The integer each atom actual resolves to is totally unimportant to you, so Erlang abstracts that detail away, but leaves the machine comparing integer values instead of doing full-string comparisons all over the place.
