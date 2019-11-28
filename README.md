@@ -36,16 +36,18 @@ Two exist that seem popular
 1. [`VSCode-Elixir`](https://marketplace.visualstudio.com/items?itemName=mjmcloug.vscode-elixir)
 2. [`ElixirLS`](https://github.com/JakeBecker/vscode-elixir-ls)
    Haven't seen a major difference between them, although `ElixirLS` acknowledges using VSCode-Elixir code in its implementation.
+   I configured `ElixirLS` extension according to [these instructions](https://medium.com/@abadon.gutierrez/elixir-development-with-visual-studio-code-16b923e82653)
 
-### Tab autocompletion in `iex`
 
-To get tab autocompletion on Windows Powershell when running `iex` (or in my case `ielx` because of the alias setup) open running
+### Tab auto-completion in `iex`
+
+To get tab auto-completion on Windows PowerShell when running `iex` (or in my case `ielx` because of the alias setup) open running
 
 ```
 ielx --werl
 ```
 
-This will open `ielx` into a new window with `werl` where you can do tab autocompletion. Not the prettiest, but I guess it will have to do.
+This will open `ielx` into a new window with `werl` where you can do tab auto-completion. Not the prettiest, but I guess it will have to do.
 I decided to edit the profile for PowerShell and add the line
 
 ```PowerShell
